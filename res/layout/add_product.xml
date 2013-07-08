@@ -1,0 +1,186 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="5dp"
+    tools:context=".AddProductActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/add_product_name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingTop="10dp"
+            android:text="@string/add_product_name_title" />
+
+        <EditText
+            android:id="@+id/add_product_name_edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/add_product_name_textview"
+            android:ems="10"
+            android:inputType="text"
+            android:maxLength="30" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/add_product_price_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/add_product_name_edittext"
+            android:text="@string/add_product_price_title" />
+
+        <EditText
+            android:id="@+id/add_product_price_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/add_product_price_textview"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="8" />
+
+        <Spinner
+            android:id="@+id/add_product_currency_spinner"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/add_product_price_edittext"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/add_product_price_edittext"
+            android:layout_below="@+id/add_product_price_textview"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/add_product_price_edittext"
+            android:entries="@array/product_currency_array"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/add_product_category_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/add_product_price_edittext"
+            android:text="@string/add_product_category_title" />
+
+        <LinearLayout
+            android:id="@+id/category_spinner_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/add_product_category_textview"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/add_product_category_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".20" />
+
+            <Button
+                android:id="@+id/add_product_new_category_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".80"
+                android:text="@string/add_product_btn_title" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/add_product_desc_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/category_spinner_layout"
+            android:text="@string/add_product_desc_title" />
+
+        <EditText
+            android:id="@+id/add_product_desc_edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/add_product_desc_textview"
+            android:ems="10"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:maxLength="150"
+            android:maxLines="5"
+            android:minLines="2" />
+
+        <TextView
+            android:id="@+id/add_product_location_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/add_product_desc_edittext"
+            android:text="@string/add_product_location_title" />
+
+        <EditText
+            android:id="@+id/add_product_location_edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/add_product_location_textview"
+            android:ems="10"
+            android:inputType="text"
+            android:maxLength="30" />
+
+        <TextView
+            android:id="@+id/add_product_prioritylevel_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/add_product_location_edittext"
+            android:text="@string/add_product_prioritylevel_title" />
+
+        <RatingBar
+            android:id="@+id/add_product_prioritylevel_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/add_product_prioritylevel_textview"
+            android:numStars="5"
+            android:rating="3"
+            android:stepSize="1" />
+
+        <TextView
+            android:id="@+id/add_product_wishlevel_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/add_product_prioritylevel_ratingbar"
+            android:text="@string/add_product_wishlevel_title" />
+
+        <RatingBar
+            android:id="@+id/add_product_wishlevel_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/add_product_wishlevel_textview"
+            android:numStars="5"
+            android:rating="3"
+            android:stepSize="1" />
+
+        <Button
+            android:id="@+id/add_product_save_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/add_product_wishlevel_ratingbar"
+            android:paddingTop="10dp"
+            android:text="@string/add_product_save_button" />
+    </RelativeLayout>
+
+</ScrollView>

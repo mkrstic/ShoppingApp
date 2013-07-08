@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="15dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="15dp" >
+
+    <TextView
+        android:id="@+id/product_priority_layout_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="top|left"
+        android:paddingBottom="10dp"
+        android:paddingRight="15dp"
+        android:text="IPaD BY APPLE"
+        android:textAllCaps="true"
+        style="@style/product_name"/>
+
+    <ImageView
+        android:id="@+id/product_priority_layout_category_imageview"
+        style="@style/list_icon_priority_layout"
+        android:layout_alignTop="@+id/product_priority_layout_name_textview"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="3dp"
+        android:layout_toRightOf="@+id/product_priority_layout_name_textview"
+        android:src="@drawable/shopping" />
+
+    <TextView
+        android:id="@+id/product_priority_layout_category_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/product_priority_layout_category_imageview"
+        android:layout_alignTop="@+id/product_priority_layout_category_imageview"
+        android:layout_toRightOf="@+id/product_priority_layout_category_imageview"
+        android:gravity="center"
+        android:text="HiTech"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/product_priority_layout_price_imageview"
+        style="@style/list_icon_priority_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/product_priority_layout_name_textview"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_menu_edit" />
+
+    <TextView
+        android:id="@+id/product_priority_layout_price_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/product_priority_layout_price_imageview"
+        android:layout_alignTop="@+id/product_priority_layout_price_imageview"
+        android:layout_below="@+id/product_priority_layout_name_textview"
+        android:layout_toRightOf="@+id/product_priority_layout_price_imageview"
+        android:gravity="center"
+        android:text="600"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/product_priority_layout_location_imageview"
+        style="@style/list_icon_priority_layout"
+        android:layout_alignBottom="@+id/product_priority_layout_price_textview"
+        android:layout_alignTop="@+id/product_priority_layout_price_textview"
+        android:layout_below="@+id/product_priority_layout_name_textview"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="3dp"
+        android:layout_toRightOf="@+id/product_priority_layout_price_textview"
+        android:src="@drawable/ic_menu_mylocation" />
+
+    <TextView
+        android:id="@+id/product_priority_layout_location_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/product_priority_layout_location_imageview"
+        android:layout_alignTop="@+id/product_priority_layout_location_imageview"
+        android:layout_below="@+id/product_priority_layout_name_textview"
+        android:layout_toRightOf="@+id/product_priority_layout_location_imageview"
+        android:gravity="center"
+        android:text="Beograd"
+        android:textSize="12sp" />
+
+    <ImageButton
+        android:id="@+id/product_priority_layout_delete_imagebutton"
+        style="@style/list_icon_priority_layout"
+        android:layout_above="@+id/product_priority_layout_desc_textview"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_menu_delete" />
+
+    <TextView
+        android:id="@+id/product_priority_layout_desc_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/product_priority_layout_price_imageview"
+        android:layout_marginTop="3dp"
+        android:background="@color/product_priority_layout_desc_background"
+        android:gravity="top|left"
+        android:minHeight="80dp"
+        android:padding="10dp"
+        android:text="Small device that i like very much in like to shop itt"
+        android:textColor="@color/product_priority_layout_desc_text"
+        android:textSize="12sp" />
+
+</RelativeLayout>

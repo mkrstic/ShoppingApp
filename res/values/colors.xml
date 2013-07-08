@@ -1,0 +1,10 @@
+<resources>
+
+    <color name="product_header_background">#000AD1</color>
+    <color name="product_normal_layout_desc_background">#D6CFD6</color>
+    <color name="product_wish_layout_desc_background">#FF0019</color>
+    <color name="product_priority_layout_desc_text">#40FF03</color>
+    <color name="product_priority_layout_desc_background">#000000</color>
+    
+    <color name="product_name_text">#9B0202</color>
+</resources>

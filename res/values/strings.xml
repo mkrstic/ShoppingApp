@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ShoppingApp</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="ok_text">OK</string>
+    <string name="title_activity_add_product">Add Product</string>
+    <string name="add_product_btn_title">ADD</string>
+    <string name="add_product_name_title">Product name</string>
+    <string name="add_product_price_title">Price</string>
+    <string name="add_product_desc_title">Description</string>
+    <string name="add_product_category_title">Category</string>
+    <string name="add_product_location_title">Location</string>
+    <string name="add_product_prioritylevel_title">Priority level</string>
+    <string name="add_product_wishlevel_title">Wish level</string>
+    <string name="add_product_save_button">Save</string>
+    <string name="add_product_validation_failed_message">Product not saved! Check your input</string>
+    <string name="add_product_saved_message">Product \'%1$s\' saved</string>
+	<string name="add_product_not_saved_message">Operation failed! Cannot write to the storage.</string>
+	<string name="add_product_new_category_name_title">Enter category name</string>
+	<string name="add_product_new_category_dialog_title">New category</string>
+	<string name="validation_product_name_empty">Enter product name</string>
+	<string name="validation_product_desc_empty">Enter product description</string>
+	<string name="validation_product_category_empty">Select category</string>
+	<string name="validation_product_location_empty">Enter location</string>
+	<string name="validation_product_currency_empty">Select currency</string>
+	<string name="validation_product_price_out_of_bounds">Enter positive value for price</string>
+	<string name="validation_product_priority_out_of_bounds">Priority must be value between 1 and 5</string>
+	<string name="validation_product_wish_out_of_bounds">Wish level must be value between 1 and 5</string>
+	<string name="shopping_list_no_products">No products</string>
+	<string name="shopping_list_header_title">ShopAssist</string>
+	<string name="product_no_location_placeholder">Unknown</string>
+	<string name="share_product_subject" >%1$s for only %2$d %3$s!</string>
+	<string name="share_chooser_text">Share via...</string>
+	<string name="share_product_body">Check out this product:\n%1$s\n%2$s\nYou can find it at %3$s for only %4$d %5$s.</string>
+	<string name="remove_product_failed_message">Error! Cannot remove product.</string>
+	<string name="remove_product_success_message">Product removed</string>
+	<string name="menu_sort_by_importance">Sort by importance</string>
+	<string name="add_category_failed">Error occured! Cannot add category to database.</string>
+	<string-array name="product_currency_array">
+		<item >RSD</item>
+		<item >USD</item>
+	</string-array>
+	<string name="product_provider_authority">com.comtrade.praksa.shoppingapp.provider</string>    
+
+</resources>

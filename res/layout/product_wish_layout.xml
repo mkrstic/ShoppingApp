@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="15dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="15dp" >
+
+    <TextView
+        android:id="@+id/product_wish_layout_name_textview"
+        style="@style/product_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:text="Zara dress" />
+
+    <ImageView
+        android:id="@+id/product_wish_layout_price_imageview"
+        style="@style/list_icon_wish_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/product_wish_layout_name_textview"
+        android:layout_marginRight="3dp"
+        android:src="@drawable/ic_menu_edit" />
+
+    <TextView
+        android:id="@+id/product_wish_layout_price_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/product_wish_layout_price_imageview"
+        android:layout_alignTop="@+id/product_wish_layout_price_imageview"
+        android:layout_toRightOf="@+id/product_wish_layout_price_imageview"
+        android:gravity="center"
+        android:text="4500"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/product_wish_layout_location_imageview"
+        style="@style/list_icon_wish_layout"
+        android:layout_below="@+id/product_wish_layout_name_textview"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="3dp"
+        android:layout_toRightOf="@+id/product_wish_layout_price_textview"
+        android:src="@drawable/ic_menu_mylocation" />
+
+    <TextView
+        android:id="@+id/product_wish_layout_location_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/product_wish_layout_location_imageview"
+        android:layout_alignTop="@+id/product_wish_layout_location_imageview"
+        android:layout_toRightOf="@+id/product_wish_layout_location_imageview"
+        android:gravity="center"
+        android:text="Knez"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/product_wish_layout_category_imageview"
+        style="@style/list_icon_wish_layout"
+        android:layout_below="@+id/product_wish_layout_name_textview"
+        android:layout_marginRight="3dp"
+        android:layout_toRightOf="@+id/product_wish_layout_location_textview"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/shopping" />
+
+    <TextView
+        android:id="@+id/product_wish_layout_category_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/product_wish_layout_category_imageview"
+        android:layout_alignTop="@+id/product_wish_layout_category_imageview"
+        android:layout_toRightOf="@+id/product_wish_layout_category_imageview"
+        android:gravity="center"
+        android:text="Clothing"
+        android:textSize="12sp" />
+
+    <ImageButton
+        android:id="@+id/product_wish_layout_delete_imagebutton"
+        style="@style/list_icon_wish_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/product_wish_layout_price_textview"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/ic_menu_delete" 
+        />
+
+    <ImageButton
+        android:id="@+id/product_wish_layout_share_imagebutton"
+        style="@style/list_icon_wish_layout"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/product_wish_layout_location_textview"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/ic_menu_share" />
+
+    <TextView
+        android:id="@+id/product_wish_layout_desc_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/product_wish_layout_delete_imagebutton"
+        android:background="@color/product_wish_layout_desc_background"
+        android:gravity="top|left"
+        android:minHeight="80dp"
+        android:padding="10dp"
+        android:text="Small device that i like very much in like to shop itt"
+        android:textSize="12sp"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
